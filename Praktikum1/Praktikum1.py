@@ -4,7 +4,7 @@ with open('data_mahasiswa.txt', 'r',encoding="utf-8") as file:
     isi_file = file.read()
     print(isi_file)
 
-    print("Tipe Data : ", type(isi_file))
+    print("Tipe Data : ", type(isi_file)) # jhgjhgjhgjgjjhg
 # Latihan 1
     print("==== Membuka file per baris ====")
     with open("data_mahasiswa.txt", "r") as file:
