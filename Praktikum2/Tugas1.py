@@ -1,0 +1,1 @@
+print("Tugas 1")
