@@ -1,8 +1,19 @@
-#file handling, buat fungsi load data dari file
+# ==========================================================
+# Praktikum 1: ADT & File Handling (Studi Kasus: Data Mahasiswa)
+# Latihan 1: Load data dari file ke Dictionary
+# ==========================================================
 
 nama_file ="data_mahasiswa.txt"
 
 def baca_data(nama_file):
+    """
+    Membaca data mahasiswa dari file.
+    Format per baris: NIM,NAMA,NILAI
+    Output:
+    - data_dict (dictionary)
+    key = NIM
+    value = {"nama": NAMA, "nilai": NILAI(int)}
+    """
     data_dict = {}
     with open(nama_file, 'r', encoding="utf-8") as file:
         for baris in file : 
@@ -15,6 +26,10 @@ buka_data = baca_data(nama_file)
 print ("Jumlah data terbaca", len(buka_data))
 
 
+# ==========================================================
+# Praktikum 1: ADT & File Handling (Studi Kasus: Data Mahasiswa)
+# Latihan 2: Tampilkan semua data mahasiswa
+# ==========================================================
 
 def tampilkan_data(data_dict):
     print("\n======= Daftar Mahasiswa =======")
@@ -29,6 +44,11 @@ def tampilkan_data(data_dict):
 
 #tampilkan_data(buka_data)
 #Searching
+
+# ==========================================================
+# Praktikum 1: ADT & File Handling (Studi Kasus: Data Mahasiswa)
+# Latihan 3: Cari data berdasarkan NIM
+# ==========================================================
 
 def cari_data(data_dict):
     nim_cari = input("Masukkan NIM Mahasiswa yang ingin dicari: ").strip()
@@ -46,6 +66,11 @@ def cari_data(data_dict):
 
 #memanggil fungsi search data(cari data)
 #cari_data(buka_data)
+
+# ==========================================================
+# Praktikum 1: ADT & File Handling (Studi Kasus: Data Mahasiswa)
+# Latihan 4: Update nilai mahasiswa (ubah nilai)
+# ==========================================================
 
 #Membuat fungsi update data
 def ubah_data(data_dict):
@@ -71,6 +96,11 @@ def ubah_data(data_dict):
 #Memanggil fungsi ubah data
 #ubah_data(buka_data)
 
+# ==========================================================
+# Praktikum 1: ADT & File Handling (Studi Kasus: Data Mahasiswa)
+# Latihan 5: Simpan perubahan data mahasiswa (save)
+# ==========================================================
+
 #Simpan Data
 def simpan_data(nama_file, data_dict):
     with open(nama_file, "w", encoding="utf-8") as file:
@@ -82,6 +112,11 @@ def simpan_data(nama_file, data_dict):
 #Memanggil fungsi simpan data
 #print("\nData Berhasil Disimpan ke File: ", nama_file)
 #simpan_data(nama_file, buka_data)
+
+# ==========================================================
+# Praktikum 1: ADT & File Handling (Studi Kasus: Data Mahasiswa)
+# Latihan 6: Menu interaktif
+# ==========================================================
 
 #fungsi yang dijalankan pertama kali (menggunakan main)
 def main():
