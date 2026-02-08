@@ -1,0 +1,5 @@
+BRG001, Sepatu, 4
+BRG002, Sendal, 35
+BRG003, Tas, 76
+BRG004, Pensil, 140
+BRG067, Bola Basket, 17
